@@ -7,10 +7,10 @@
 </head>
 <body>
 <div class="container">
-          <?php
-          $nome = $_GET["nome"];
-          $preco = $_GET["preco"];?>
-          Produto <?= $nome;?> com o preço $<?= $preco;?>, adicionado com  sucesso!!
+    <?php
+    $nome = $_GET["nome"];
+    $preco = $_GET["preco"];?>
+    <p class="alert-success">Produto <?= $nome;?> com o preço $<?= $preco;?>, adicionado com  sucesso!!</p></div>
 </div>
 </body>
 </html>
