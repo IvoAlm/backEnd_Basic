@@ -1,8 +1,15 @@
 <html>
-<head>
-
-</head>
-<body>
-    <h1>Bem Vindo!!!</h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Minha Loja</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/loja.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="principal">
+            <h1>Bem Vindo!!!</h1>
+            </div>
+        </div>
+    </body>
 </html>
