@@ -1,6 +1,12 @@
 <html>
-    <head></head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Minha Loja</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/loja.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
         <form action="adiciona-produto.php">
             Nome:
             <input type="text" name="nome"><br>
@@ -9,5 +15,6 @@
 
             <input type="submit" value="cadastra">
         </form>
-    </body>
+</div>
+</body>
 </html>
