@@ -10,5 +10,4 @@
     <?php } else{ ?>
         <p class="alert-danger">Produto <?= $nome;?> não foi adicionado com  sucesso!!</p>
     <?php }
-    mysqli_close($conexao);
     include('rodape.php'); ?>
