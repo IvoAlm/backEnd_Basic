@@ -6,15 +6,15 @@
     <link href="css/loja.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
     <div class="container">
         <div class="navbar-header">
         <a class="navbar-brand" href="index.php">Minha Loja</a>
         </div>
-        <div>
-            <ul class="nav navbar-nav">
-                <li><a href="produto-formulario.php">Adiciona Produto</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="produto-formulario.php">Adiciona Produto</a></li>
+                <li class="nav-item active"><a class="nav-link" href="sobre.php"> Sobre</a></li>
             </ul>
         </div>
     </div>
