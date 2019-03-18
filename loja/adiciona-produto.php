@@ -10,7 +10,9 @@
 
     if (insereProduto($conexao, $nome, $preco)){ ?>
         <p class="text-success">Produto <?= $nome;?> com o preço $<?= $preco;?>, adicionado com  sucesso!!</p>
-    <?php } else{ ?>
-        <p class="text-danger">Produto <?= $nome;?> não foi adicionado com  sucesso!!</p>
+    <?php } else{
+        $msg = mysqli_error($conexao);
+        ?>
+        <p class="text-danger"><b>Produto <?= $nome;?> não foi adicionado:</b><?= $msg; ?> </p>
     <?php }
     include('rodape.php'); ?>
