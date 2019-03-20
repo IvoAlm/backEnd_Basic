@@ -2,8 +2,11 @@
 include ("cabecalho.php");
 include ("conecta.php");
 
-$resultado = mysqli_query($conexao,"selected * from produtos");
+$query = "SELECT * FROM loja.produtos;";
+$resultado = mysqli_query($conexao,$query);
+
 while($produto = mysqli_fetch_assoc($resultado)){
     echo $produto['nome']."<br>";
 }
+
 include("rodape.php");
