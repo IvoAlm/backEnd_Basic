@@ -13,7 +13,7 @@ function listaProdutos($conexao){
 ?>
 <table class="table table-striped table-bordered">
     <?php
-        $produtos = $this->listaProduto($conexao);
+        $produtos = listaProdutos($conexao);
         foreach ($produtos as $produto):
     ?>
     <tr>
@@ -25,10 +25,3 @@ function listaProdutos($conexao){
     ?>
 </table>
 <?php include('rodape.php'); ?>
-
-
-
-
-
-
-include("rodape.php");
