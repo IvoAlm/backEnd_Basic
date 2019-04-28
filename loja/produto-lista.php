@@ -3,6 +3,7 @@ include ("cabecalho.php");
 include ("conecta.php");
 include('banco-produto.php');
 ?>
+<p class="alert-success"> Produto removido com sucesso!!</p>
 <table class="table table-striped table-bordered">
     <?php
         $produtos = listaProdutos($conexao);
