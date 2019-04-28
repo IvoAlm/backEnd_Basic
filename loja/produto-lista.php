@@ -11,6 +11,8 @@ include('banco-produto.php');
     <tr>
         <td><?= $produto['nome'] ?></td>
         <td><?= $produto['preco'] ?></td>
+        <td><a href="" class="text-danger">Remover</a>
+        </td>
     </tr>
     <?php
         endforeach
