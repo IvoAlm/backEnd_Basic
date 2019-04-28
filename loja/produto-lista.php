@@ -2,8 +2,9 @@
 include ("cabecalho.php");
 include ("conecta.php");
 include('banco-produto.php');
-?>
+if (array_key_exists("removido", $_GET) && $_GET['removido'] == true):?>
 <p class="alert-success"> Produto removido com sucesso!!</p>
+<?php endif ?>
 <table class="table table-striped table-bordered">
     <?php
         $produtos = listaProdutos($conexao);
