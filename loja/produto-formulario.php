@@ -1,7 +1,7 @@
 <?php include('cabecalho.php'); ?>
 <div style=" text-align: center;">
     <h1>Formulário de Produto</h1>
-        <form action="adiciona-produto.php">
+        <form action="adiciona-produto.php" method="post">
             <table class="table">
                 <tr>
                     <td>Nome:</td>
