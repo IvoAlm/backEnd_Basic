@@ -14,6 +14,7 @@ if (array_key_exists("removido", $_GET) && $_GET['removido'] == true):?>
         <td><?= $produto['nome'] ?></td>
         <td><?= $produto['preco'] ?></td>
         <td><?= substr($produto['descricao'], 0,20) ?></td>
+        <td><?= $produto["categoria_nome"]?></td>
         <td>
             <form action="remove-produto.php" method="post">
                 <input type="hidden" name="id" value="<?= $produto['id']?>">

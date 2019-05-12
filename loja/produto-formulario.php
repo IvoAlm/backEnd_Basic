@@ -1,12 +1,12 @@
 <?php include('cabecalho.php');
 include('conecta.php');
-include('banco-categoria');
+include('banco-categoria.php');
 $categorias = listaCategorias($conexao);
 ?>
 
 <div style=" text-align: center;">
     <h1>Formulário de Produto</h1>
-        <form action="adiciona-produto.p hp" method="post">
+        <form action="adiciona-produto.php" method="post">
             <table class="table">
                 <tr>
                     <td>Nome:</td>
