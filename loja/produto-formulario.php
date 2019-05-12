@@ -1,11 +1,12 @@
 <?php include('cabecalho.php');
 include('conecta.php');
 include('banco-categoria');
+$categorias = listaCategorias($conexao);
 ?>
 
 <div style=" text-align: center;">
     <h1>Formulário de Produto</h1>
-        <form action="adiciona-produto.php" method="post">
+        <form action="adiciona-produto.p hp" method="post">
             <table class="table">
                 <tr>
                     <td>Nome:</td>
@@ -22,10 +23,10 @@ include('banco-categoria');
                 <tr>
                     <td>Categoria</td>
                     <td>
-                        <input type="radio" name="categoria_id" value="1">Esporte<br>
-                        <input type="radio" name="categoria_id" value="2">Escolar<br>
-                        <input type="radio" name="categoria_id" value="3">Mobilidade<br>
-
+                        <?php foreach ($categorias as $categoria):?>
+                        <input type="radio" name="categoria_id" value="<?=$categoria['id']?>">
+                        <?=$categoria['nome']?><br>
+                        <?php endforeach;?>
                     </td>
                 </tr>
                 <tr>
