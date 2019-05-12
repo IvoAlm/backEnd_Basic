@@ -1,4 +1,8 @@
-<?php include('cabecalho.php'); ?>
+<?php include('cabecalho.php');
+include('conecta.php');
+include('banco-categoria');
+?>
+
 <div style=" text-align: center;">
     <h1>Formulário de Produto</h1>
         <form action="adiciona-produto.php" method="post">
