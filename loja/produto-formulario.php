@@ -12,6 +12,10 @@
                     <td><input clas="form-control" type="number" name="preco"></td>
                 </tr>
                 <tr>
+                    <td>Descrição</td>
+                    <td><textarea class="form-control" name="descricao"></textarea></td>
+                </tr>
+                <tr>
                     <td>
                         <button class="btn btn-primary" type="submit" value="cadastra"> Cadastrar</button>
                     </td>
