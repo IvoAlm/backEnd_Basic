@@ -16,6 +16,15 @@
                     <td><textarea class="form-control" name="descricao"></textarea></td>
                 </tr>
                 <tr>
+                    <td>Categoria</td>
+                    <td>
+                        <input type="radio" name="categoria_id" value="1">Esporte<br>
+                        <input type="radio" name="categoria_id" value="2">Escolar<br>
+                        <input type="radio" name="categoria_id" value="3">Mobilidade<br>
+
+                    </td>
+                </tr>
+                <tr>
                     <td>
                         <button class="btn btn-primary" type="submit" value="cadastra"> Cadastrar</button>
                     </td>
